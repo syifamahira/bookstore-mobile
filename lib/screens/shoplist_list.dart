@@ -5,7 +5,7 @@ class Product {
   final int price;
   final String description;
 
-  Product(this.name, this.price, this.description);
+  Product(this.name, this.price, this.description, String author, String genre, int amount);
 }
 
 class ShopListPage extends StatelessWidget {

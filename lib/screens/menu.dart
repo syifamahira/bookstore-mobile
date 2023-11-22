@@ -1,6 +1,7 @@
+import 'package:bookstore_mobile/screens/list_product.dart';
+import 'package:flutter/material.dart';
 import 'package:bookstore_mobile/screens/shoplist_form.dart';
 import 'package:bookstore_mobile/screens/shoplist_list.dart';
-import 'package:flutter/material.dart';
 import 'package:bookstore_mobile/widgets/left_drawer.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -98,7 +99,10 @@ class ShopCard extends StatelessWidget {
               context,
               MaterialPageRoute(builder: (context) => ShopListPage()),
             );
-          }
+          }else if (item.name == "Lihat Produk") {
+            Navigator.push(context,
+            MaterialPageRoute(builder: (context) => const ProductPage()));
+      }
         },
         child: Container(
           // Container untuk menyimpan Icon dan Text
