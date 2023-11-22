@@ -95,7 +95,40 @@ Clean Architecture adalah pendekatan arsitektur perangkat lunak yang memisahkan 
 - Saya menambahkan navigasi ke page tersebut di  `left_drawer.dart` dan `menu.dart `
 - Saya juga menambahkan drawer di masing2 page yang sudah dibuat
 
-
-
-
 </details>
+
+<details>
+  <summary>Tugas 9</summary>
+  <br>
+
+### Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Ya, kita bisa melakukan pengambilan data JSON tanpa membuat model terlebih dahulu. Namun, menggunakan model dapat membantu memudahkan pengolahan dan penggunaan data dengan lebih terstruktur.
+
+###  Jelaskan fungsi dari CookieRequest dan jelaskan mengapa instance CookieRequest perlu untuk dibagikan ke semua komponen di aplikasi Flutter.
+CookieRequest adalah permintaan (request) yang membawa informasi cookie saat berkomunikasi dengan server. Menggunakan instance CookieRequest untuk dibagikan ke semua komponen dalam aplikasi Flutter memastikan konsistensi dan keberlanjutan sesi pengguna di seluruh aplikasi.
+
+###  Jelaskan mekanisme pengambilan data dari JSON hingga dapat ditampilkan pada Flutter.
+Mekanisme pengambilan data dari JSON hingga ditampilkan pada Flutter melibatkan langkah-langkah seperti pengambilan data menggunakan API atau HTTP request, parsing data JSON, dan kemudian menampilkan data tersebut menggunakan widget Flutter sesuai dengan tata letak yang diinginkan.
+
+### Jelaskan mekanisme autentikasi dari input data akun pada Flutter ke Django hingga selesainya proses autentikasi oleh Django dan tampilnya menu pada Flutter.
+Mekanisme autentikasi dari input data akun pada Flutter ke Django melibatkan pengiriman data login dari aplikasi Flutter ke backend Django melalui API. Django akan memproses data tersebut, melakukan autentikasi, dan menghasilkan token yang dikirim kembali ke aplikasi Flutter. Aplikasi Flutter dapat menyimpan token ini dan menggunakannya dalam setiap permintaan berikutnya untuk mengakses sumber daya yang memerlukan autentikasi. Setelah proses autentikasi selesai, menu pada aplikasi Flutter dapat diperbarui sesuai dengan hak akses pengguna yang terotentikasi.
+
+### Widget yang digunakan
+| Widget             | Fungsi                                   | Penjelasan Implementasi                                       |
+| ------------------ | ---------------------------------------- | ------------------------------------------------------------- |
+| TextField          | Memungkinkan pengguna memasukkan teks    | Digunakan untuk memasukkan nama pengguna dan kata sandi        |
+| FutureBuilder      | Membangun widget secara asinkron         | Mengelola status loading, error, dan data yang tersedia        |
+| ListView.builder   | Membuat daftar yang dapat digulirkan     | Menampilkan daftar album yang diambil                           |
+| Column             | Menyusun komponen secara vertikal        | Menyusun detail album seperti nama, jumlah, dan deskripsi secara vertikal  |
+| SizedBox           | Menambahkan ruang vertikal               | Menambahkan ruang antara berbagai informasi tentang album      |
+
+### Step-by-step Pengerjaan
+- Pertama saya buat app django authentication
+- membuat function login pada view.py
+- meng-install package
+- membuat login dart
+- membuat model kustom
+- membuat detail product_list page
+- selesai
+
+  
